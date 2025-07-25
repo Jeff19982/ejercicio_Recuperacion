@@ -1,37 +1,25 @@
 {
-    "name": "greenter/demo",
-    "description": "Demostración de Greenter",
-    "keywords": ["greenter", "facturacion-electronica", "sunat"],
+    "name": "your-company/sri-retencion-client",
+    "description": "Módulo para generación y envío de Comprobantes de Retención del SRI de Ecuador.",
+    "keywords": ["sri", "facturacion-electronica", "ecuador", "comprobante-retencion"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Giancarlos Salas",
-            "email": "giansalex@gmail.com"
+            "name": "Jeferson Vargas",
+            "email": "jeffariel2@gmail.com"
         }
-    ],
-    "homepage": "https://github.com/thegreenter/demo",
+     ],
     "type": "project",
     "autoload": {
         "psr-4": {
-            "": "src/"
+            "App\\": "src/" 
         }
     },
     "require": {
         "php": ">=7.4",
         "ext-json": "*",
-        "greenter/lite": "^5.0",
-        "greenter/report": "^5.0",
-        "greenter/htmltopdf": "^5.0",
-        "greenter/data": "^5.0"
-    },
-    "require-dev": {
-        "phpstan/phpstan": "^1.9"
-    },
-    "scripts": {
-        "post-install-cmd": "@php composer/PostInstall.php",
-        "reset-cache": "@php composer/ClearCache.php",
-        "lint": "phpstan analyse",
-        "lint:ci": "phpstan analyse --error-format=github"
+        "robrichards/xmlseclibs": "^3.0"
+        
     },
     "prefer-stable": true,
     "minimum-stability": "dev",
